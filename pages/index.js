@@ -242,7 +242,7 @@ const QRGEN = (props) => {
         </span>
       </h2>
       <QRCode
-        value={`http://192.168.1.8:3000/fruit?code=${code}&name=${name}&pdate=${pack_date}&tdate=${trans_date}&edate=${exp_date}`}
+        value={`https://fruitscanner.netlify.app/fruit?code=${code}&name=${name}&pdate=${pack_date}&tdate=${trans_date}&edate=${exp_date}`}
       />
       <span>scan the QR-CODE to view the details about the fruit</span>
     </div>
