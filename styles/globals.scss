@@ -1,0 +1,237 @@
+/* Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../public/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+  padding: 30px;
+}
+
+.container {
+  position: relative;
+  width: fit-content;
+  background: #dadada3f;
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  perspective: 2700px;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+.container .forms {
+  height: 100%;
+  width: 100%;
+  background: #ffffff00;
+}
+
+.container .form-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.forms .form-content .login-form .logo-img {
+  width: 100%;
+  height: 100px;
+  /* background-color: #3c8965; */
+  overflow: hidden;
+  text-align: center;
+}
+.forms .form-content .login-form .logo-img img {
+  object-position: center;
+  height: 200px;
+  width: 200px;
+  margin: -50px 0 0 0;
+  object-fit: cover;
+}
+
+.forms .form-content .title {
+  position: relative;
+  font-size: 28px;
+  font-weight: 500;
+  color: #333;
+  /* text-align: center; */
+}
+
+.forms .form-content .title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background: #3c8965;
+}
+
+.forms .signup-form .title:before {
+  width: 20px;
+}
+
+.forms .form-content .input-boxes {
+  margin-top: 30px;
+}
+
+.forms .form-content .input-box {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+  padding: 0 10px;
+}
+
+.form-content .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  color: rgb(0, 0, 0);
+}
+
+.form-content .input-box input:focus,
+.form-content .input-box input:valid {
+  border-color: #3c8965;
+}
+
+.form-content .input-box i {
+  position: absolute;
+  color: #3c8965;
+  font-size: 17px;
+}
+
+.forms .form-content .text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #bebebe;
+}
+
+.forms .form-content .text a {
+  text-decoration: none;
+}
+
+.forms .form-content .text a:hover {
+  text-decoration: underline;
+}
+
+.forms .form-content .button {
+  color: #fff;
+  margin-top: 40px;
+}
+
+.forms .form-content .button input {
+  color: #fff;
+  background: #3c8965;
+  border-radius: 6px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.forms .form-content .button input:hover {
+  background: #2a555c;
+}
+
+.forms .form-content label:hover {
+  text-decoration: underline;
+}
+
+.container .qr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+.container .qr h2 {
+  text-align: center;
+  padding: 5px 10px;
+  color: #2a555c;
+}
+.container .qr h2 span {
+  text-transform: capitalize;
+  color: #fe8301;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 30px;
+}
+.container .qr span {
+  text-align: center;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.cont {
+  position: relative;
+  width: fit-content;
+  background: #dadada3f;
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  perspective: 2700px;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+.cont .fruit-data {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.cont .fruit-data h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.cont .fruit-data table {
+  margin-top: 10px;
+  border: 1px solid #2a555c;
+  border-collapse: collapse;
+}
+
+.cont .fruit-data table td {
+  border: 1px solid #2a555c;
+  padding: 5px 20px;
+  text-transform: capitalize;
+}
+
+.cont .fruit-data .logo-img {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.cont .fruit-data .logo-img img {
+  height: 200px;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 500px) {
+  .cont {
+    padding: 40px 5px;
+  }
+}
